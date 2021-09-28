@@ -1,0 +1,37 @@
+{
+  "name": "database-typeorm",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./build && tsc",
+    "start": "node ./build/src/server.js",
+    "pre-start": "node ./node_modules/typeorm/cli.js migration:run",
+    "dev:server": "tsnd --transpile-only --ignore-watch node_modules src/server.ts",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+    "migration:generate": "npm run typeorm migration:generate --config ./ormconfig.json --name",
+    "migration:run": "npm run typeorm migration:run --config ./ormconfig.json",
+    "migration:revert": "npm run typeorm migration:revert --config ./ormconfig.json",
+    "migration:show": "npm run typeorm migration:show --config ./ormconfig.json"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.31"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.11",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^8.10.66",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.0.4",
+    "ts-node": "3.3.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.1.5"
+  }
+}
