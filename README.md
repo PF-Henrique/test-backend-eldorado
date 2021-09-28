@@ -56,12 +56,12 @@ DB_PASSWORD=devices123
 DB_NAME=devices
 ```
 <h1 align="center">
-    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/rds.png" width= "300px;" height= "300px;" />
+    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/rds.png"/>
 </h1>
 
 
 <h1 align="center">
-    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/sgbd.png" width= "300px;" height= "300px;" />
+    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/sgbd.png"/>
 </h1>
 
 Connection Api server
@@ -70,12 +70,12 @@ Connection Api server
 ```
 
 <h1 align="center">
-    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/ec2.png" width= "300px;" height= "300px;" />
+    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/ec2.png"/>
 </h1>
 
 
 <h1 align="center">
-    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/server_running.png" width= "300px;" height= "300px;" />
+    <img src="https://github.com/PF-Henrique/test-backend-eldorado/blob/master/.docs/server_running.png"/>
 </h1>
 
 
