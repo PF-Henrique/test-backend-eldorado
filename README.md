@@ -9,7 +9,7 @@ yarn
 ```
 
 ## Options connection DB
-- 1° Create local database
+### 1° Create local database
 ```
 $ docker run --name dolphin -v mysql_datavolume:/var/lib/mysql -p 3306:3306 -p 33060:33060/tcp -d -e MYSQL_ROOT_PASSWORD=banana mysql
 ```
@@ -45,7 +45,7 @@ Request postman
 
 ---
 
-- 2° connect with RDS AND EC2 AWS
+### 2° connect with RDS AND EC2 AWS
 
 Connection db
 ```
