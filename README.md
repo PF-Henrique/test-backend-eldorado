@@ -79,6 +79,10 @@ Connection Api server
 </h1>
 
 
+## 🐛 Issues
+
+Feel free to **file a new issue** with a respective title and description on the the [Backend Issues](https://github.com/PF-Henrique/test-backend-eldorado/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
+
 
 ## ✨ Me
 
