@@ -20,7 +20,7 @@ class ProductCategoryController {
     const productCategories = await ProductCategory.find();
     console.log("cheguei");
 
-    return res.json(productCategories);
+    return res.status(200).json(productCategories);
   }
   // List per id
   async show(req: Request, res: Response) {
@@ -32,7 +32,7 @@ class ProductCategoryController {
       relations: ["products"],
     });
 
-    return res.json(productCategory);
+    return res.status(200).json(productCategory);
   }
   // update per id
   async update(req: Request, res: Response) {
@@ -46,7 +46,7 @@ class ProductCategoryController {
 
     await productCategory.save();
 
-    return res.json(productCategory);
+    return res.status(200).json(productCategory);
   }
   // delete per id
   async delete(req: Request, res: Response) {

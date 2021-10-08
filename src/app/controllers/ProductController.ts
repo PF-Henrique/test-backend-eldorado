@@ -4,12 +4,13 @@ import { Product } from "../entities/Product";
 
 class ProductController {
   async store(req: Request, res: Response) {
-    const { name, price, productCategoryId } = req.body;
+    const { name, color, parthNumber, productCategoryId } = req.body;
 
     const product = new Product();
 
     product.name = name;
-    product.price = price;
+    product.color = color;
+    product.parthNumber = parthNumber;
     product.productCategoryId = productCategoryId;
 
     await product.save();
@@ -31,22 +32,23 @@ class ProductController {
       relations: ["productCategory"],
     });
 
-    return res.json(product);
+    return res.status(200).json(product);
   }
 
   async update(req: Request, res: Response) {
     const { id } = req.params;
-    const { name, price, productCategoryId } = req.body;
+    const { name, color, parthNumber, productCategoryId } = req.body;
 
     const product = await Product.findOne(id);
 
     product.name = name ?? product.name;
-    product.price = price ?? product.price;
+    product.color = color ?? product.color;
+    product.parthNumber = parthNumber ?? product.parthNumber;
     product.productCategoryId = productCategoryId ?? product.productCategoryId;
 
     await product.save();
 
-    return res.json(product);
+    return res.status(200).json(product);
   }
 
   async delete(req: Request, res: Response) {

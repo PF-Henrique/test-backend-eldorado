@@ -19,11 +19,14 @@ export class Product extends BaseEntity {
   @Column()
   name: string;
 
-  @Column()
-  price: number;
+  @Column("varchar", { length: 16 })
+  color: string;
 
   @Column()
   productCategoryId: number;
+
+  @Column({ type: "int" })
+  parthNumber: number;
 
   @ManyToOne(
     () => ProductCategory,
